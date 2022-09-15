@@ -12,11 +12,16 @@ public class main{
     public static void main(String[] args) {
         System.out.println(o.resta(n1, n2));
         Hola();
+        holaM();
     }
 
     public static void Hola() {
         M.setN1(n1);
         M.setN2(n2);
         System.out.println(o.suma(M));
+    }
+
+    public void holaM(){
+        System.out.println("hola mundo");
     }
 }
