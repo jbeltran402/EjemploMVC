@@ -2,27 +2,60 @@ package modelo;
 
 public class Modelo {
     
-    private int n1;
-    private int n2;
+    private String Nombre;
+    private String SegundoNombre;
+    private String Apellido;
+    private String SegundoApellido;
+    private String Correo;
 
     public Modelo(){
     }
 
-    public Modelo(int n1, int n2){
-        this.n1 = n1;
-        this.n2 = n2;
+    public Modelo(String nombre, String segundoNombre, String apellido, String segundoApellido, String correo) {
+        Nombre = nombre;
+        SegundoNombre = segundoNombre;
+        Apellido = apellido;
+        SegundoApellido = segundoApellido;
+        Correo = correo;
+    }   
+
+    public String getNombre() {
+        return this.Nombre;
     }
-    
-    public int getN1() {
-        return n1;
+
+    public void setNombre(String Nombre) {
+        this.Nombre = Nombre;
     }
-    public void setN1(int n1) {
-        this.n1 = n1;
+
+    public String getSegundoNombre() {
+        return this.SegundoNombre;
     }
-    public int getN2() {
-        return n2;
+
+    public void setSegundoNombre(String SegundoNombre) {
+        this.SegundoNombre = SegundoNombre;
     }
-    public void setN2(int n2) {
-        this.n2 = n2;
+
+    public String getApellido() {
+        return this.Apellido;
+    }
+
+    public void setApellido(String Apellido) {
+        this.Apellido = Apellido;
+    }
+
+    public String getSegundoApellido() {
+        return this.SegundoApellido;
+    }
+
+    public void setSegundoApellido(String SegundoApellido) {
+        this.SegundoApellido = SegundoApellido;
+    }
+
+    public String getCorreo() {
+        return this.Correo;
+    }
+
+    public void setCorreo(String Correo) {
+        this.Correo = Correo;
     }
 }
